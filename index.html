@@ -8,7 +8,12 @@
 <body>
 	<div class="contact-form">
 	  <div class="error_message"></div>
-	<formaction="https://formsubmit.co/iamhardyusuf@gmail.com" method="POST" id="myform" onsubmit="return validation()" action="index2.html">
+	<form class="row g-3"action="https://formsubmit.co/iamhardyusuf@gmail.com" method="POST">
+	  <!---Honeypot--->
+	  <input type="text" name="_honey" style="display:none;">
+	  <!---Disable Captcha--->
+<input type="hidden" name="_captcha" value="false";>
+	  
   <h1>CONTACT FORM</h1>
     <div class="container">
     <input id="username"type="text" placeholder="Full name" required>
